@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Baba, Love & Power</title>
+  <link rel="stylesheet" href="index.css" />
+  <style>
+    /* Optional: make the image fit nicely inside the button */
+    .choice img {
+      width: 24px;
+      height: 24px;
+      vertical-align: middle;
+      margin-right: 6px;
+    }
+  </style>
+</head>
+<body>
+  <div id="splash-screen">
+    <img src="bapdhadha.jpg" alt="BapDada" class="splash-img" />
+  </div>
+
+  <div class="game-container">
+    <h1>Baba, Love & Power</h1>
+
+    <div class="choices">
+      <!-- Replace emoji with image -->
+      <button class="choice" data-choice="baba">
+        <img src="sivababa.png" alt="Baba" /> Baba
+      </button>
+      <button class="choice" data-choice="love">❤️ Love</button>
+      <button class="choice" data-choice="power">⚡ Power</button>
+    </div>
+
+    <div class="result">
+      <p id="player-choice">Your Choice: -</p>
+      <p id="computer-choice">Computer's Choice: -</p>
+      <h2 id="winner">Who wins? 🤔</h2>
+    </div>
+
+    <div class="scoreboard">
+      <p>You: <span id="player-score">0</span></p>
+      <p>Computer: <span id="computer-score">0</span></p>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
