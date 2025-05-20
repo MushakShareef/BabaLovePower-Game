@@ -39,7 +39,7 @@ body {
 .game-container {
   text-align: center;
   background: white;
-  padding: 30px;
+  padding: 50px;
   border-radius: 20px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   max-width: 900px;
@@ -50,31 +50,35 @@ body {
 h1 {
   margin-bottom: 50px;
   color: #b40000;
+  font-size: 4.5rem;
 }
 
 /* Choices */
 .choices {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 100px;
+  margin-bottom: 70px;
+  align-items: center;
+  
 }
 
 .choice {
   border: none;
   background: #fff;
   cursor: pointer;
-  padding: 30px;
+  padding: 25px 0px;
   border-radius: 10px;
   transition: all 0.3s ease;
-  width: 100px;
-  font-size: 16px;
+  width: 170px;
+  font-size: 60px;
 }
 
 .choice img {
-  width: 24px;
-  height: 24px;
+  width: 60px;
+  height: 60px;
   vertical-align: middle;
-  margin-right: 6px;
+  margin-right: -10px;
+  margin-bottom: 5px;
 }
 
 
@@ -84,42 +88,45 @@ h1 {
 }
 
 .choice-icon {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   margin-bottom: 5px;
 }
 
 /* Result Section */
 .result {
   margin-bottom: 50px;
+  font-size: 3rem;
 }
 
 #winner {
   margin-top: 60px;
   color: #007b00;
   font-weight: bold;
+  font-size: 5rem;
 }
 
 /* Scoreboard */
 .scoreboard {
   display: flex;
   justify-content: space-around;
-  font-weight: bold;
+  /* font-weight: bold; */
+  font-size: 3.5rem;
 }
-
+/* 
 .card {
-  width: 90vw;       /* Use most of the screen width */
-  max-width: 400px;  /* Limit on large screens */
+  width: 90vw;       
+  max-width: 400px; 
   padding: 1.5rem;
-  font-size: 1.2rem; /* Make text readable */
+  font-size: 1.2rem; 
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 @media (max-width: 600px) {
   .card {
-    font-size: 1.4rem; /* Slightly larger font on small screens */
+    font-size: 1.4rem; 
   }
-}
+} */
 
 @media (max-width: 480px) {
   .game-container {
@@ -138,8 +145,8 @@ h1 {
   }
 
   .choice-icon {
-    width: 100px;
-    height: 100px;
+    width: 300px;
+    height: 300px;
   }
 
   .scoreboard {
