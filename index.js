@@ -93,7 +93,7 @@ window.addEventListener('load', () => {
   // Hide automatically after 3 seconds
   setTimeout(() => {
     splash.style.display = 'none';
-  }, 3000);
+  }, 5500);
 
   // OR allow user to click to hide early
   splash.addEventListener('click', () => {
@@ -101,3 +101,12 @@ window.addEventListener('load', () => {
   });
 });
 
+
+window.addEventListener('load', () => {
+  const rules = document.getElementById('game-rules');
+  
+  setTimeout(() => {
+    // Hide the rules overlay after 5 seconds
+    rules.style.display = 'none';
+  }, 5000);
+});
